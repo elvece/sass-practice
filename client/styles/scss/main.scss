@@ -35,6 +35,15 @@ $dark-grey: #dddddd;
   }
 }
 
+.full-circular {
+  @include border-radius(50%)
+}
+
+//extends good for font styling
+.message {
+  @extend .full-circular
+}
+
 
 // div.info {
 //   background: #efefef;
