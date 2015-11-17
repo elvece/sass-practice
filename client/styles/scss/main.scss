@@ -39,26 +39,28 @@ $dark-grey: #dddddd;
   @include border-radius(50%)
 }
 
-//extends good for font styling
+//note: extends - good for font styling
 .message {
   @extend .full-circular
 }
 
+//note: operators can define widths/heights, do math
+//no example
 
-// div.info {
-//   background: #efefef;
-//   p {
-//     color: $dark-grey;
-//     &:last-child {
-//       color: blue;
-//     }
-//     &.warning {
-//       color: orange;
-//     }
-//   }
-//   h1 {
-//     font-weight: 800;
-//   }
-//   border: 1px solid $dark-grey
-// }
+div.info {
+  background: #efefef;
+  p {
+    color: $dark-grey;
+    &:last-child {
+      color: blue;
+    }
+    &.warning {
+      color: orange;
+    }
+  }
+  h1 {
+    font-weight: 800;
+  }
+  border: 1px solid $dark-grey
+}
 
