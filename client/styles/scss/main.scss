@@ -13,13 +13,19 @@
 //imports file
 @import "../vendor/bourbon/bourbon";
 
-.section {
-  @include triangle(12px, gray, down);
+body {
+  height: 900px;
+  @include background (linear-gradient(blue, green) left repeat);
 }
 
 
+/* BOURBON TRIANGLE */
+// .section {
+//   @include triangle(12px, gray, down);
+// }
 
 
+/* SASS PRACTICE */
 
 //mixin is modular code for css
 
