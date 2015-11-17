@@ -8,18 +8,48 @@
 // 5. Trying some of the other bourbon tools! Animation/keyframes,
 //    triangle, ellipsis
 
+//mixin is modular code for css
+
 $dark-grey: #dddddd;
 
-h1 {
-  color: $dark-grey
+@mixin warning(){
+  background: black;
+  color: red;
+  text-transform: uppercase;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.message {
+  &.warning {
+    @include warning();
+    border: 1px solid red;
+  }
+  &.circle {
+    @include border-radius(50%)
+  }
 }
 
 
-p {
-  color: $dark-grey
-}
+// div.info {
+//   background: #efefef;
+//   p {
+//     color: $dark-grey;
+//     &:last-child {
+//       color: blue;
+//     }
+//     &.warning {
+//       color: orange;
+//     }
+//   }
+//   h1 {
+//     font-weight: 800;
+//   }
+//   border: 1px solid $dark-grey
+// }
 
-
-div {
-  border: 1px solid $dark-grey
-}
