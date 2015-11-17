@@ -7,3 +7,19 @@
 //    the colors using tint and shade.
 // 5. Trying some of the other bourbon tools! Animation/keyframes,
 //    triangle, ellipsis
+
+$dark-grey: #dddddd;
+
+h1 {
+  color: $dark-grey
+}
+
+
+p {
+  color: $dark-grey
+}
+
+
+div {
+  border: 1px solid $dark-grey
+}
