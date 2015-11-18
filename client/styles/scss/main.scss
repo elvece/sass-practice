@@ -1,6 +1,24 @@
 @import "../vendor/bourbon/bourbon";
 @import "../vendor/neat/neat";
 
+$media: new-breakpoint(max-width 500px);
+$tablet: new-breakpoint(max-width 950px);
+
+//includes to set grid structure
 .container {
   @include outer-container;
+
+  .sidebar {
+    height: 800px;
+    background-color: grey;
+    @include span-columns(2);
+    @include media($tablet){
+      @include span-columns(10 of 10);
+    }
+  }
+
+  .content {
+    @include span-columns(10)
+  }
 };
+
