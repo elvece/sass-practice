@@ -1,6 +1,153 @@
 @import "../vendor/bourbon/bourbon";
 @import "../vendor/neat/neat";
 
-.container {
-  @include outer-container;
-};
+$light-gray: #efefef;
+$tablet: new-breakpoint(max-width 960px);
+
+// .container {
+//   @include outer-container;
+
+//   nav {
+//     background: #efefef;
+//     display: block;
+//     padding: 1rem;
+
+//     ul li {
+//       display: inline-block;
+//       h6 { margin: 0; }
+//       &:last-child { float: right; }
+//     }
+//   }
+
+//   main {
+//     @include row();
+//   }
+
+//   aside {
+//     @include span-columns(2);
+//     @include media($tablet) {
+//       display: none;
+//     }
+//   }
+
+//   section.articles {
+//     @include span-columns(10);
+//     @include media($tablet) {
+//       @include span-columns(12);
+//     }
+
+//     article {
+//       @include span-columns(4);
+//       padding: 3rem 0;
+
+//       @include media($tablet) {
+//         @include span-columns(12);
+//         padding: 1em 0;
+//       }
+
+//       header {
+//         @include span-columns(10 of 10);
+//         display: none;
+
+//         ul {
+//           background: $light-gray;
+//           margin: 0;
+//           text-align: center;
+//           @include padding(rem(14) rem(10) rem(16));
+          
+//           li {
+//             display: inline-block;
+//             margin-right: rem(50);
+
+//             span {
+//               font-weight: 700;
+              
+//               &.tag {
+//                 border-bottom: 2px solid black;
+//                 margin: 0 8px;
+//                 padding-bottom: 2px;
+//               }
+//             }
+//           }
+//         }
+//       }
+
+//       section {
+//         .article-image {
+//           @include size(100% rem(500));
+//           overflow: hidden;
+          
+//           img {
+//             @include size(auto 100%);
+//           }
+//         }
+
+//         p {
+//           min-height: 220px;
+//         }
+
+//         @include media($tablet) {
+//           .article-image {
+//             @include size(100% rem(300));
+            
+//             img {
+//               @include size(100% auto);
+//             }
+//           }
+//           p { min-height: 0; }
+//         }
+//       }
+
+//       aside {        
+//         @include span-columns(10 of 10);
+//         ul {
+//           background: $light-gray;
+//           padding: rem(10) rem(25);
+
+//           li {
+//             display: inline-block;
+//             margin-right: 10px;
+            
+//             span {
+//               font-weight: 700;
+//             }
+//           }
+//         }
+//       }
+
+//       &:first-child {
+//         @include span-columns(10 of 10);
+
+//         section {
+//           .article-image {
+//             @include size(100% rem(1000));
+//           }
+
+//           p { min-height: 0; }
+//         }
+
+//         header {
+//           display: block;
+//         }
+
+//         @include media($tablet) {
+//           @include span-columns(12);
+//           section {
+//             .article-image {
+//               @include size(100% rem(500));
+
+//               img {
+//                 @include size(auto 100%);
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   footer {
+//     background: $light-gray;
+//     padding: rem(30);
+//   }
+// };
